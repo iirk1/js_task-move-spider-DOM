@@ -10,7 +10,7 @@ wall.addEventListener('click', (e) => {
   y = Math.max(
     spider.offsetHeight / 2,
     Math.min(
-      y,
+      y + spider.offsetHeight / 3,
       wall.offsetHeight - 2 * wall.clientTop - spider.offsetHeight / 2,
     ),
   );
@@ -18,7 +18,7 @@ wall.addEventListener('click', (e) => {
   x = Math.max(
     spider.offsetWidth / 2,
     Math.min(
-      x,
+      x + spider.offsetWidth / 3,
       wall.offsetWidth - 2 * wall.clientLeft - spider.offsetWidth / 2,
     ),
   );
